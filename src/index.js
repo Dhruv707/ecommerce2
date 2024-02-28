@@ -7,6 +7,7 @@ import ShopContextProvider from "./Context/ShopContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
+  //<ShopContextProvider>added so that any file can use the ShopContext variable to access all products
   <ShopContextProvider>
     <App />
   </ShopContextProvider>

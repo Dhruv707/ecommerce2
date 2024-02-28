@@ -2,8 +2,9 @@ import React, { createContext } from "react";
 import all_product from "../Components/Assets/all_product";
 
 export const ShopContext = createContext(null);
+
 const ShopContextProvider = (props) => {
-  const contextValue = { all_product };
+  const contextValue = { all_product }; //this will be used in all places to give access to all products
 
   return (
     <ShopContext.Provider value={contextValue}>
@@ -11,4 +12,5 @@ const ShopContextProvider = (props) => {
     </ShopContext.Provider>
   );
 };
+
 export default ShopContextProvider;
