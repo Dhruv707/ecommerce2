@@ -55,7 +55,7 @@ const ProductDisplay = (props) => {
         </div>
         <button
           onClick={() => {
-            addToCart(product.id); //confusing as addToCart is not a function
+            addToCart(product.id);
           }}
         >
           ADD TO CART
