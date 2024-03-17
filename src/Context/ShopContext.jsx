@@ -11,7 +11,7 @@ const getDefaultCart = () => {
   return cart;
 };
 
-const ShopContextProvider = ({ children }) => {
+const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
   const addToCart = (itemId) => {
@@ -66,7 +66,9 @@ const ShopContextProvider = ({ children }) => {
   //this will be used in all places to give access to all these products and cart info
 
   return (
-    <ShopContext.Provider value={contextValue}>{children}</ShopContext.Provider>
+    <ShopContext.Provider value={contextValue}>
+      {props.children}
+    </ShopContext.Provider>
   );
 };
 
