@@ -8,7 +8,7 @@ import { ShopContext } from "../../Context/ShopContext";
 export default function Navbar() {
   const [menu, setMenu] = useState("shop");
   const { getTotalCartItems } = useContext(ShopContext);
-
+  //good practice
   return (
     <div className="navbar">
       <div className="nav-logo">
